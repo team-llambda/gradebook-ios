@@ -1,0 +1,7 @@
+xcuserdata/
+Pods/
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+*.playground
