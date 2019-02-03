@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Child" representedClassName="Child" syncable="YES">
+        <attribute name="childName" attributeType="String" defaultValueString="John Doe" syncable="YES"/>
+        <attribute name="grade" attributeType="String" defaultValueString="10" syncable="YES"/>
+        <attribute name="organizationName" attributeType="String" defaultValueString="Main St. High School" syncable="YES"/>
+        <attribute name="studentGU" attributeType="String" defaultValueString="XXXX-XXXX-XXXX-XXXX" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Child" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>

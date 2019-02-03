@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1666A04D3F5A760E52E0BA89 /* Pods_EDUPointServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B05462DAF112815EA23540B /* Pods_EDUPointServicesTests.framework */; };
+		78071A497157C567F4011D35 /* Pods_EDUPointServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA11A04B83099FCAF506B205 /* Pods_EDUPointServices.framework */; };
+		CC2486792202B27B006020D3 /* EDUPChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2486782202B27B006020D3 /* EDUPChild.swift */; };
+		CC39F3CC2203B91400A9E8B2 /* EDUPStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3CB2203B91400A9E8B2 /* EDUPStorageController.swift */; };
+		CC39F3D42207A10D00A9E8B2 /* PXPWebServices+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3D32207A10D00A9E8B2 /* PXPWebServices+Errors.swift */; };
+		CC39F3DA2207A89400A9E8B2 /* TestENVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3D92207A89400A9E8B2 /* TestENVs.swift */; };
+		CC8ACCB42202B6F4007FD7BF /* PXPWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCB32202B6F4007FD7BF /* PXPWebServices.swift */; };
+		CC8ACCB62202B7EE007FD7BF /* PXPWebServices+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */; };
+		CC8ACCBB2202BF41007FD7BF /* Codable+AnyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */; };
+		CC8ACCBE22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCBD22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift */; };
+		CCE66AAB21FFFC3400BC783E /* EDUPointServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */; };
+		CCE66AB021FFFC3400BC783E /* EDUPointServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE66AAF21FFFC3400BC783E /* EDUPointServicesTests.swift */; };
+		CCE66AB221FFFC3400BC783E /* EDUPointServices.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE66AA421FFFC3400BC783E /* EDUPointServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCE66AC721FFFD1C00BC783E /* EDUPointServices.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCE66AC521FFFD1C00BC783E /* EDUPointServices.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCE66AAC21FFFC3400BC783E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE66A9821FFFC3400BC783E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE66AA021FFFC3400BC783E;
+			remoteInfo = EDUPointServices;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A48793339EDDE525BA38A66 /* Pods-EDUPointServicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDUPointServicesTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EDUPointServicesTests/Pods-EDUPointServicesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8336F6BEE184D27DC642B28A /* Pods-EDUPointServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDUPointServicesTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EDUPointServicesTests/Pods-EDUPointServicesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B05462DAF112815EA23540B /* Pods_EDUPointServicesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDUPointServicesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64B75CD809EDC2FF151AFEE /* Pods-EDUPointServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDUPointServices.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EDUPointServices/Pods-EDUPointServices.debug.xcconfig"; sourceTree = "<group>"; };
+		CC2486782202B27B006020D3 /* EDUPChild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDUPChild.swift; sourceTree = "<group>"; };
+		CC39F3CB2203B91400A9E8B2 /* EDUPStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPStorageController.swift; sourceTree = "<group>"; };
+		CC39F3D32207A10D00A9E8B2 /* PXPWebServices+Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+Errors.swift"; sourceTree = "<group>"; };
+		CC39F3D92207A89400A9E8B2 /* TestENVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestENVs.swift; sourceTree = "<group>"; };
+		CC8ACCB32202B6F4007FD7BF /* PXPWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXPWebServices.swift; sourceTree = "<group>"; };
+		CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+Functions.swift"; sourceTree = "<group>"; };
+		CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+AnyKey.swift"; sourceTree = "<group>"; };
+		CC8ACCBD22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+ProcessWebRequestTests.swift"; sourceTree = "<group>"; };
+		CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDUPointServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE66AA421FFFC3400BC783E /* EDUPointServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDUPointServices.h; sourceTree = "<group>"; };
+		CCE66AA521FFFC3400BC783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE66AAA21FFFC3400BC783E /* EDUPointServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDUPointServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE66AAF21FFFC3400BC783E /* EDUPointServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPointServicesTests.swift; sourceTree = "<group>"; };
+		CCE66AB121FFFC3400BC783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE66AC621FFFD1C00BC783E /* EDUPointServices.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EDUPointServices.xcdatamodel; sourceTree = "<group>"; };
+		F8361AB758EF38BCA8090015 /* Pods-EDUPointServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDUPointServices.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EDUPointServices/Pods-EDUPointServices.release.xcconfig"; sourceTree = "<group>"; };
+		FA11A04B83099FCAF506B205 /* Pods_EDUPointServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDUPointServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCE66A9E21FFFC3400BC783E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78071A497157C567F4011D35 /* Pods_EDUPointServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE66AA721FFFC3400BC783E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE66AAB21FFFC3400BC783E /* EDUPointServices.framework in Frameworks */,
+				1666A04D3F5A760E52E0BA89 /* Pods_EDUPointServicesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0A3BFE9ADDAF5394C7B3CAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B64B75CD809EDC2FF151AFEE /* Pods-EDUPointServices.debug.xcconfig */,
+				F8361AB758EF38BCA8090015 /* Pods-EDUPointServices.release.xcconfig */,
+				1A48793339EDDE525BA38A66 /* Pods-EDUPointServicesTests.debug.xcconfig */,
+				8336F6BEE184D27DC642B28A /* Pods-EDUPointServicesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC2486732202AFE8006020D3 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		CC8ACCB22202B6EB007FD7BF /* api */ = {
+			isa = PBXGroup;
+			children = (
+				CC39F3CB2203B91400A9E8B2 /* EDUPStorageController.swift */,
+				CC8ACCB32202B6F4007FD7BF /* PXPWebServices.swift */,
+				CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */,
+				CC39F3D32207A10D00A9E8B2 /* PXPWebServices+Errors.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		CC8ACCBC22038B69007FD7BF /* PXPWebServices */ = {
+			isa = PBXGroup;
+			children = (
+				CC8ACCBD22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift */,
+			);
+			path = PXPWebServices;
+			sourceTree = "<group>";
+		};
+		CCE66A9721FFFC3400BC783E = {
+			isa = PBXGroup;
+			children = (
+				CCE66AA321FFFC3400BC783E /* EDUPointServices */,
+				CCE66AAE21FFFC3400BC783E /* EDUPointServicesTests */,
+				CCE66AA221FFFC3400BC783E /* Products */,
+				C0A3BFE9ADDAF5394C7B3CAC /* Pods */,
+				FA4B1FA50D7CFDF443CFA904 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCE66AA221FFFC3400BC783E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */,
+				CCE66AAA21FFFC3400BC783E /* EDUPointServicesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCE66AA321FFFC3400BC783E /* EDUPointServices */ = {
+			isa = PBXGroup;
+			children = (
+				CC8ACCB22202B6EB007FD7BF /* api */,
+				CC2486732202AFE8006020D3 /* helpers */,
+				CCE66AC421FFFD0C00BC783E /* models */,
+				CCE66AA421FFFC3400BC783E /* EDUPointServices.h */,
+				CCE66AA521FFFC3400BC783E /* Info.plist */,
+			);
+			path = EDUPointServices;
+			sourceTree = "<group>";
+		};
+		CCE66AAE21FFFC3400BC783E /* EDUPointServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC8ACCBC22038B69007FD7BF /* PXPWebServices */,
+				CCE66AAF21FFFC3400BC783E /* EDUPointServicesTests.swift */,
+				CCE66AB121FFFC3400BC783E /* Info.plist */,
+				CC39F3D92207A89400A9E8B2 /* TestENVs.swift */,
+			);
+			path = EDUPointServicesTests;
+			sourceTree = "<group>";
+		};
+		CCE66AC421FFFD0C00BC783E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CCE66AC521FFFD1C00BC783E /* EDUPointServices.xcdatamodeld */,
+				CC2486782202B27B006020D3 /* EDUPChild.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FA4B1FA50D7CFDF443CFA904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA11A04B83099FCAF506B205 /* Pods_EDUPointServices.framework */,
+				9B05462DAF112815EA23540B /* Pods_EDUPointServicesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CCE66A9C21FFFC3400BC783E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE66AB221FFFC3400BC783E /* EDUPointServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CCE66AA021FFFC3400BC783E /* EDUPointServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE66AB521FFFC3400BC783E /* Build configuration list for PBXNativeTarget "EDUPointServices" */;
+			buildPhases = (
+				3B81375BD19E19A8147EA306 /* [CP] Check Pods Manifest.lock */,
+				CCE66A9C21FFFC3400BC783E /* Headers */,
+				CCE66A9D21FFFC3400BC783E /* Sources */,
+				CCE66A9E21FFFC3400BC783E /* Frameworks */,
+				CCE66A9F21FFFC3400BC783E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EDUPointServices;
+			productName = EDUPointServices;
+			productReference = CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCE66AA921FFFC3400BC783E /* EDUPointServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE66AB821FFFC3400BC783E /* Build configuration list for PBXNativeTarget "EDUPointServicesTests" */;
+			buildPhases = (
+				09BEDAD7347E9C8CFFBFF6DD /* [CP] Check Pods Manifest.lock */,
+				CCE66AA621FFFC3400BC783E /* Sources */,
+				CCE66AA721FFFC3400BC783E /* Frameworks */,
+				CCE66AA821FFFC3400BC783E /* Resources */,
+				631A61439AA3382BB145491B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE66AAD21FFFC3400BC783E /* PBXTargetDependency */,
+			);
+			name = EDUPointServicesTests;
+			productName = EDUPointServicesTests;
+			productReference = CCE66AAA21FFFC3400BC783E /* EDUPointServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCE66A9821FFFC3400BC783E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Aeta;
+				TargetAttributes = {
+					CCE66AA021FFFC3400BC783E = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CCE66AA921FFFC3400BC783E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CCE66A9B21FFFC3400BC783E /* Build configuration list for PBXProject "EDUPointServices" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CCE66A9721FFFC3400BC783E;
+			productRefGroup = CCE66AA221FFFC3400BC783E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCE66AA021FFFC3400BC783E /* EDUPointServices */,
+				CCE66AA921FFFC3400BC783E /* EDUPointServicesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCE66A9F21FFFC3400BC783E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE66AA821FFFC3400BC783E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09BEDAD7347E9C8CFFBFF6DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EDUPointServicesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B81375BD19E19A8147EA306 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EDUPointServices-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631A61439AA3382BB145491B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-EDUPointServicesTests/Pods-EDUPointServicesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-EDUPointServicesTests/Pods-EDUPointServicesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCE66A9D21FFFC3400BC783E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8ACCBB2202BF41007FD7BF /* Codable+AnyKey.swift in Sources */,
+				CC2486792202B27B006020D3 /* EDUPChild.swift in Sources */,
+				CC8ACCB62202B7EE007FD7BF /* PXPWebServices+Functions.swift in Sources */,
+				CC8ACCB42202B6F4007FD7BF /* PXPWebServices.swift in Sources */,
+				CC39F3CC2203B91400A9E8B2 /* EDUPStorageController.swift in Sources */,
+				CCE66AC721FFFD1C00BC783E /* EDUPointServices.xcdatamodeld in Sources */,
+				CC39F3D42207A10D00A9E8B2 /* PXPWebServices+Errors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE66AA621FFFC3400BC783E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC39F3DA2207A89400A9E8B2 /* TestENVs.swift in Sources */,
+				CC8ACCBE22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift in Sources */,
+				CCE66AB021FFFC3400BC783E /* EDUPointServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCE66AAD21FFFC3400BC783E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE66AA021FFFC3400BC783E /* EDUPointServices */;
+			targetProxy = CCE66AAC21FFFC3400BC783E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CCE66AB321FFFC3400BC783E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCE66AB421FFFC3400BC783E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCE66AB621FFFC3400BC783E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B64B75CD809EDC2FF151AFEE /* Pods-EDUPointServices.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HKEK57AU3M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EDUPointServices/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aeta.EDUPointServices;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE66AB721FFFC3400BC783E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8361AB758EF38BCA8090015 /* Pods-EDUPointServices.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HKEK57AU3M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = EDUPointServices/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aeta.EDUPointServices;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCE66AB921FFFC3400BC783E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A48793339EDDE525BA38A66 /* Pods-EDUPointServicesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKEK57AU3M;
+				INFOPLIST_FILE = EDUPointServicesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aeta.EDUPointServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE66ABA21FFFC3400BC783E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8336F6BEE184D27DC642B28A /* Pods-EDUPointServicesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKEK57AU3M;
+				INFOPLIST_FILE = EDUPointServicesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aeta.EDUPointServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCE66A9B21FFFC3400BC783E /* Build configuration list for PBXProject "EDUPointServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE66AB321FFFC3400BC783E /* Debug */,
+				CCE66AB421FFFC3400BC783E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE66AB521FFFC3400BC783E /* Build configuration list for PBXNativeTarget "EDUPointServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE66AB621FFFC3400BC783E /* Debug */,
+				CCE66AB721FFFC3400BC783E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE66AB821FFFC3400BC783E /* Build configuration list for PBXNativeTarget "EDUPointServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE66AB921FFFC3400BC783E /* Debug */,
+				CCE66ABA21FFFC3400BC783E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCE66AC521FFFD1C00BC783E /* EDUPointServices.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCE66AC621FFFD1C00BC783E /* EDUPointServices.xcdatamodel */,
+			);
+			currentVersion = CCE66AC621FFFD1C00BC783E /* EDUPointServices.xcdatamodel */;
+			path = EDUPointServices.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCE66A9821FFFC3400BC783E /* Project object */;
+}
