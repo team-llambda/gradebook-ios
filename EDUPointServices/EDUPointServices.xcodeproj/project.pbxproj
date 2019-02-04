@@ -22,6 +22,7 @@
 		CC8ACCB62202B7EE007FD7BF /* PXPWebServices+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */; };
 		CC8ACCBB2202BF41007FD7BF /* Codable+AnyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */; };
 		CC8ACCBE22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCBD22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift */; };
+		CCC744282208131200EA93F1 /* EDUPAssignmentGradeCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC744272208131200EA93F1 /* EDUPAssignmentGradeCalc.swift */; };
 		CCE66AAB21FFFC3400BC783E /* EDUPointServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */; };
 		CCE66AB021FFFC3400BC783E /* EDUPointServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE66AAF21FFFC3400BC783E /* EDUPointServicesTests.swift */; };
 		CCE66AB221FFFC3400BC783E /* EDUPointServices.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE66AA421FFFC3400BC783E /* EDUPointServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 		CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+Functions.swift"; sourceTree = "<group>"; };
 		CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+AnyKey.swift"; sourceTree = "<group>"; };
 		CC8ACCBD22038B7F007FD7BF /* PXPWebServices+ProcessWebRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+ProcessWebRequestTests.swift"; sourceTree = "<group>"; };
+		CCC744272208131200EA93F1 /* EDUPAssignmentGradeCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPAssignmentGradeCalc.swift; sourceTree = "<group>"; };
 		CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDUPointServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE66AA421FFFC3400BC783E /* EDUPointServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDUPointServices.h; sourceTree = "<group>"; };
 		CCE66AA521FFFC3400BC783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				CC39F3E4220807A400A9E8B2 /* EDUPAssignment.swift */,
 				CC39F3DE2207AED000A9E8B2 /* EDUPGradebook.swift */,
 				CC39F3DC2207AD8300A9E8B2 /* EDUPCourse.swift */,
+				CCC744272208131200EA93F1 /* EDUPAssignmentGradeCalc.swift */,
 				CC2486782202B27B006020D3 /* EDUPChild.swift */,
 				CC39F3E22208042800A9E8B2 /* EDUPMark.swift */,
 			);
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC744282208131200EA93F1 /* EDUPAssignmentGradeCalc.swift in Sources */,
 				CC39F3DF2207AED000A9E8B2 /* EDUPGradebook.swift in Sources */,
 				CC8ACCBB2202BF41007FD7BF /* Codable+AnyKey.swift in Sources */,
 				CC39F3E5220807A400A9E8B2 /* EDUPAssignment.swift in Sources */,

@@ -11,15 +11,8 @@ import CoreData
 
 @objc(Child)
 public class Child: NSManagedObject, Decodable {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Child> {
-        return NSFetchRequest<Child>(entityName: "Child")
-    }
-    
     public enum CodingKeys: String, CodingKey {
-        case studentGU = "StudentGU"
-        case childName = "ChildName"
-        case grade = "Grade"
-        case organizationName = "OrganizationName"
+        case StudentGU, ChildName, Grade, OrganizationName
     }
     
     @NSManaged public var studentGU: String
@@ -37,9 +30,9 @@ public class Child: NSManagedObject, Decodable {
         let childListContainer = try container.nestedContainer(keyedBy: AnyKey.self, forKey: AnyKey(stringValue: "ChildList"))
         let childContainer = try childListContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: AnyKey(stringValue: "Child"))
         
-        self.studentGU = try childContainer.decode(String.self, forKey: .studentGU)
-        self.childName = try childContainer.decode(String.self, forKey: .childName)
-        self.grade = try childContainer.decode(String.self, forKey: .grade)
-        self.organizationName = try childContainer.decode(String.self, forKey: .organizationName)
+        self.studentGU = try childContainer.decode(String.self, forKey: .StudentGU)
+        self.childName = try childContainer.decode(String.self, forKey: .ChildName)
+        self.grade = try childContainer.decode(String.self, forKey: .Grade)
+        self.organizationName = try childContainer.decode(String.self, forKey: .OrganizationName)
     }
 }

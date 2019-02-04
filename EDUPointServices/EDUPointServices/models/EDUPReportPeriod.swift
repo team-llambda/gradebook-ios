@@ -11,10 +11,7 @@ import CoreData
 @objc(ReportPeriod)
 public class ReportPeriod: NSManagedObject, Decodable {
     public enum CodingKeys: String, CodingKey {
-        case index = "Index"
-        case gradePeriod = "GradePeriod"
-        case startDate = "StartDate"
-        case endDate = "EndDate"
+        case Index, GradePeriod, StartDate, EndDate
     }
     
     @NSManaged public var index: Int16
@@ -32,9 +29,9 @@ public class ReportPeriod: NSManagedObject, Decodable {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.index = try container.decode(Int16.self, forKey: .index)
-        self.gradePeriod = try container.decode(String.self, forKey: .gradePeriod)
-        self.startDate = try container.decode(Date.self, forKey: .startDate)
-        self.endDate = try container.decode(Date.self, forKey: .endDate)
+        self.index = try container.decode(Int16.self, forKey: .Index)
+        self.gradePeriod = try container.decode(String.self, forKey: .GradePeriod)
+        self.startDate = try container.decode(Date.self, forKey: .StartDate)
+        self.endDate = try container.decode(Date.self, forKey: .EndDate)
     }
 }

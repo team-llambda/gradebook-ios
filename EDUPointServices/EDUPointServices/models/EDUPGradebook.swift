@@ -11,8 +11,7 @@ import CoreData
 @objc(Gradebook)
 public class Gradebook: NSManagedObject, Decodable {
     public enum CodingKeys: String, CodingKey {
-        case courses = "Courses"
-        case reportingPeriods = "ReportingPeriods"
+        case Courses, ReportingPeriods
     }
     
     @NSManaged public var courses: Set<Course>
@@ -28,7 +27,7 @@ public class Gradebook: NSManagedObject, Decodable {
         let gradebookContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: AnyKey(stringValue: "Gradebook"))
         
         // ======= Courses =======
-        let coursesContainer = try gradebookContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .courses)
+        let coursesContainer = try gradebookContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .Courses)
         
         let courses = try coursesContainer.decode([Course].self, forKey: AnyKey(stringValue: "Course"))
         courses.indices.forEach { courses[$0].gradebook = self }
@@ -36,7 +35,7 @@ public class Gradebook: NSManagedObject, Decodable {
         self.courses = Set<Course>(courses)
         
         // ======= Reporting Periods =======
-        let reportingPeriodsContainer = try gradebookContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .reportingPeriods)
+        let reportingPeriodsContainer = try gradebookContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .ReportingPeriods)
         
         let reportPeriods = try reportingPeriodsContainer.decode([ReportPeriod].self, forKey: AnyKey(stringValue: "ReportPeriod"))
         reportPeriods.indices.forEach { reportPeriods[$0].gradebook = self }

@@ -11,15 +11,7 @@ import CoreData
 @objc(Course)
 public class Course: NSManagedObject, Decodable {
     public enum CodingKeys: String, CodingKey {
-        case title = "Title"
-        case period = "Period"
-        case room = "Room"
-        
-        case staffGU = "StaffGU"
-        case staff = "Staff"
-        case staffEmail = "StaffEMail"
-        
-        case marks = "Marks"
+        case Title, Period, Room, StaffGU, Staff, StaffEMail, Marks
     }
     
     @NSManaged public var title: String
@@ -42,16 +34,16 @@ public class Course: NSManagedObject, Decodable {
 
         let courseContainer = try decoder.container(keyedBy: CodingKeys.self)
 
-        self.title = try courseContainer.decode(String.self, forKey: .title)
-        self.period = try courseContainer.decodeIfPresent(String.self, forKey: .period)
-        self.room = try courseContainer.decodeIfPresent(String.self, forKey: .room)
+        self.title = try courseContainer.decode(String.self, forKey: .Title)
+        self.period = try courseContainer.decodeIfPresent(String.self, forKey: .Period)
+        self.room = try courseContainer.decodeIfPresent(String.self, forKey: .Room)
         
-        self.staffGU = try courseContainer.decodeIfPresent(String.self, forKey: .staffGU)
-        self.staff = try courseContainer.decodeIfPresent(String.self, forKey: .staff)
-        self.staffEmail = try courseContainer.decodeIfPresent(String.self, forKey: .staffEmail)
+        self.staffGU = try courseContainer.decodeIfPresent(String.self, forKey: .StaffGU)
+        self.staff = try courseContainer.decodeIfPresent(String.self, forKey: .Staff)
+        self.staffEmail = try courseContainer.decodeIfPresent(String.self, forKey: .StaffEMail)
         
         // ======= Marks =======
-        let marksContainer = try courseContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .marks)
+        let marksContainer = try courseContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .Marks)
         let marks = try marksContainer.decode([Mark].self, forKey: AnyKey(stringValue: "Mark"))
         marks.indices.forEach { marks[$0].course = self }
         
