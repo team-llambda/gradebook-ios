@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Assignment" representedClassName="Assignment" syncable="YES">
+        <attribute name="actualScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="assignedScore" attributeType="Double" defaultValueString="100" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gradebookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isArbitrary" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="measure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="mark" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mark" inverseName="assignments" inverseEntity="Mark" syncable="YES"/>
+    </entity>
     <entity name="Child" representedClassName="Child" syncable="YES">
         <attribute name="childName" attributeType="String" defaultValueString="John Doe" syncable="YES"/>
         <attribute name="grade" attributeType="String" defaultValueString="10" syncable="YES"/>
         <attribute name="organizationName" attributeType="String" defaultValueString="Main St. High School" syncable="YES"/>
         <attribute name="studentGU" attributeType="String" defaultValueString="XXXX-XXXX-XXXX-XXXX" syncable="YES"/>
     </entity>
+    <entity name="Course" representedClassName="Course" syncable="YES">
+        <attribute name="period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="staff" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="staffEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="staffGU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" defaultValueString="Science" syncable="YES"/>
+        <relationship name="gradebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gradebook" inverseName="courses" inverseEntity="Gradebook" syncable="YES"/>
+        <relationship name="marks" toMany="YES" deletionRule="Nullify" destinationEntity="Mark" inverseName="course" inverseEntity="Mark" syncable="YES"/>
+    </entity>
+    <entity name="Gradebook" representedClassName="Gradebook" syncable="YES">
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="gradebook" inverseEntity="Course" syncable="YES"/>
+        <relationship name="reportingPeriods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ReportPeriod" inverseName="gradebook" inverseEntity="ReportPeriod" syncable="YES"/>
+    </entity>
+    <entity name="Mark" representedClassName="Mark" syncable="YES">
+        <attribute name="calculatedScoreRaw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calculatedScoreString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="Mark Name" syncable="YES"/>
+        <relationship name="assignments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Assignment" inverseName="mark" inverseEntity="Assignment" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="marks" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <entity name="ReportPeriod" representedClassName="ReportPeriod" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="Date" defaultDateTimeInterval="570960840" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gradePeriod" attributeType="String" defaultValueString="Grade Period" syncable="YES"/>
+        <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startDate" attributeType="Date" defaultDateTimeInterval="570873600" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="gradebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gradebook" inverseName="reportingPeriods" inverseEntity="Gradebook" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Child" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Assignment" positionX="294.578125" positionY="72" width="128" height="195"/>
+        <element name="Child" positionX="-55.3359375" positionY="-150.75390625" width="128" height="105"/>
+        <element name="Course" positionX="105.25390625" positionY="-22.8046875" width="129.20703125" height="163"/>
+        <element name="Gradebook" positionX="107.92578125" positionY="-144.453125" width="129.05078125" height="88"/>
+        <element name="Mark" positionX="99.0234375" positionY="169.58203125" width="128" height="120"/>
+        <element name="ReportPeriod" positionX="339.12890625" positionY="-136.78515625" width="128" height="120"/>
     </elements>
 </model>

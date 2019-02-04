@@ -13,6 +13,11 @@
 		CC39F3CC2203B91400A9E8B2 /* EDUPStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3CB2203B91400A9E8B2 /* EDUPStorageController.swift */; };
 		CC39F3D42207A10D00A9E8B2 /* PXPWebServices+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3D32207A10D00A9E8B2 /* PXPWebServices+Errors.swift */; };
 		CC39F3DA2207A89400A9E8B2 /* TestENVs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3D92207A89400A9E8B2 /* TestENVs.swift */; };
+		CC39F3DD2207AD8400A9E8B2 /* EDUPCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3DC2207AD8300A9E8B2 /* EDUPCourse.swift */; };
+		CC39F3DF2207AED000A9E8B2 /* EDUPGradebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3DE2207AED000A9E8B2 /* EDUPGradebook.swift */; };
+		CC39F3E12207FE7C00A9E8B2 /* EDUPReportPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3E02207FE7C00A9E8B2 /* EDUPReportPeriod.swift */; };
+		CC39F3E32208042800A9E8B2 /* EDUPMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3E22208042800A9E8B2 /* EDUPMark.swift */; };
+		CC39F3E5220807A400A9E8B2 /* EDUPAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F3E4220807A400A9E8B2 /* EDUPAssignment.swift */; };
 		CC8ACCB42202B6F4007FD7BF /* PXPWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCB32202B6F4007FD7BF /* PXPWebServices.swift */; };
 		CC8ACCB62202B7EE007FD7BF /* PXPWebServices+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */; };
 		CC8ACCBB2202BF41007FD7BF /* Codable+AnyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */; };
@@ -42,6 +47,11 @@
 		CC39F3CB2203B91400A9E8B2 /* EDUPStorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPStorageController.swift; sourceTree = "<group>"; };
 		CC39F3D32207A10D00A9E8B2 /* PXPWebServices+Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+Errors.swift"; sourceTree = "<group>"; };
 		CC39F3D92207A89400A9E8B2 /* TestENVs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestENVs.swift; sourceTree = "<group>"; };
+		CC39F3DC2207AD8300A9E8B2 /* EDUPCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EDUPCourse.swift; sourceTree = "<group>"; };
+		CC39F3DE2207AED000A9E8B2 /* EDUPGradebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPGradebook.swift; sourceTree = "<group>"; };
+		CC39F3E02207FE7C00A9E8B2 /* EDUPReportPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPReportPeriod.swift; sourceTree = "<group>"; };
+		CC39F3E22208042800A9E8B2 /* EDUPMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPMark.swift; sourceTree = "<group>"; };
+		CC39F3E4220807A400A9E8B2 /* EDUPAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUPAssignment.swift; sourceTree = "<group>"; };
 		CC8ACCB32202B6F4007FD7BF /* PXPWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PXPWebServices.swift; sourceTree = "<group>"; };
 		CC8ACCB52202B7EE007FD7BF /* PXPWebServices+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PXPWebServices+Functions.swift"; sourceTree = "<group>"; };
 		CC8ACCBA2202BF41007FD7BF /* Codable+AnyKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+AnyKey.swift"; sourceTree = "<group>"; };
@@ -163,7 +173,12 @@
 			isa = PBXGroup;
 			children = (
 				CCE66AC521FFFD1C00BC783E /* EDUPointServices.xcdatamodeld */,
+				CC39F3E02207FE7C00A9E8B2 /* EDUPReportPeriod.swift */,
+				CC39F3E4220807A400A9E8B2 /* EDUPAssignment.swift */,
+				CC39F3DE2207AED000A9E8B2 /* EDUPGradebook.swift */,
+				CC39F3DC2207AD8300A9E8B2 /* EDUPCourse.swift */,
 				CC2486782202B27B006020D3 /* EDUPChild.swift */,
+				CC39F3E22208042800A9E8B2 /* EDUPMark.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -364,12 +379,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC39F3DF2207AED000A9E8B2 /* EDUPGradebook.swift in Sources */,
 				CC8ACCBB2202BF41007FD7BF /* Codable+AnyKey.swift in Sources */,
+				CC39F3E5220807A400A9E8B2 /* EDUPAssignment.swift in Sources */,
 				CC2486792202B27B006020D3 /* EDUPChild.swift in Sources */,
+				CC39F3DD2207AD8400A9E8B2 /* EDUPCourse.swift in Sources */,
+				CC39F3E32208042800A9E8B2 /* EDUPMark.swift in Sources */,
 				CC8ACCB62202B7EE007FD7BF /* PXPWebServices+Functions.swift in Sources */,
 				CC8ACCB42202B6F4007FD7BF /* PXPWebServices.swift in Sources */,
 				CC39F3CC2203B91400A9E8B2 /* EDUPStorageController.swift in Sources */,
 				CCE66AC721FFFD1C00BC783E /* EDUPointServices.xcdatamodeld in Sources */,
+				CC39F3E12207FE7C00A9E8B2 /* EDUPReportPeriod.swift in Sources */,
 				CC39F3D42207A10D00A9E8B2 /* PXPWebServices+Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
