@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://edupoint.com/webservices/">
+    <ChildList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DistrictName="Anytown School District" AppVersion="2019.0.0" MobileClientTimeout="" ShowGradeBookModule="true" ShowAttendanceModule="true" ShowCurrentScheduleModule="true" ShowDisciplineModule="false" ShowCalenderModule="true" ShowConferenceModule="false" ShowCourseHistoryModule="true" ShowCourseRequestModule="false" ShowFeeModule="false" ShowHealthVisitModule="false" ShowHealthConditionsModule="false" ShowHealthImmunizationModule="true" ShowReportCardModule="true" ShowSchoolInformationModule="true" ShowStreamsModule="false" ShowClassWebSiteModule="false" ShowNamePronunciationModule="true" ShowSynergyMailModule="false" ShowDocumentModule="true" AcknowledgementsPresent="false" AllowStudentInfoEdit="false" AllowStudentInfoEditDisabled="false" SupportingReportCardModule="true" Notification_serverCanSupport="true" Notification_Attendance="true" Notification_Grades="true" Notification_Assignment="true" Notification_Health="true" Notification_Discipline="true" Notification_Grades_CutOff="100" Notification_Assignment_CutOff="100" SupportingPushNotifications="true" SupportingLogout="true" SupportingLMSPages="true" SupportingMyAccountEdit="true">
+        <DistrictEventRecordList />
+        <Child AccessGU="0" RotationCode="Date:02/04/2019 Meeting Day:MTF" StudentGU="ABCDEF-12345-FEDCBA-54321" StudentSSY="ABCDEF-12345-FEDCBA-54321" ChildFirstName="John" ChildPermID="99999999" OrgYearGU="ABCDEF-12345-FEDCBA-54321">
+            <ID>0</ID>
+            <ChildName>John Doe</ChildName>
+            <OrganizationName>Main St. High School</OrganizationName>
+            <Grade>10</Grade>
+            <Events />
+            <photo>REDACTED</photo>
+            <ConcurrentSchools />
+        </Child>
+    </ChildList>
+</string>

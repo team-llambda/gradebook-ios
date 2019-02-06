@@ -12,6 +12,7 @@ import CoreData
 public class Mark: NSManagedObject, Decodable {
     public enum CodingKeys: CodingKey {
         case MarkName, CalculatedScoreString, CalculatedScoreRaw, Assignments, AssignmentGradeCalc
+        case GradeCalculationSummary
     }
     
     @NSManaged public var name: String
@@ -46,13 +47,21 @@ public class Mark: NSManagedObject, Decodable {
             self.assignments = []
         }
         
-        // ======= Assignments =======
-        if container.contains(.AssignmentGradeCalc) {
-            let gradeCalcContainer = try container.nestedContainer(keyedBy: AnyKey.self, forKey: .AssignmentGradeCalc)
-            let gradeCalcs = try gradeCalcContainer.decode([AssignmentGradeCalc].self, forKey: AnyKey(stringValue: "AssignmentGradeCalc"))
-            gradeCalcs.indices.forEach { gradeCalcs[$0].mark = self }
+        // ======= Assignment Grade Calc =======
+        if let gradeSummaryContainer = try? container.nestedContainer(keyedBy: AnyKey.self, forKey: .GradeCalculationSummary) {
+            var gradeCalcs = try gradeSummaryContainer.decode(Set<AssignmentGradeCalc>.self, forKey: AnyKey(stringValue: "AssignmentGradeCalc"))
             
-            self.gradeCalculations = Set<AssignmentGradeCalc>(gradeCalcs)
+            for calc in gradeCalcs.enumerated() {
+                // Delete TOTAL grade calcs.
+                guard calc.element.type != "TOTAL" else {
+                    managedObjectContext.delete(gradeCalcs.remove(calc.element)!)
+                    continue
+                }
+                
+                calc.element.mark = self
+            }
+            
+            self.gradeCalculations = gradeCalcs
         } else {
             self.gradeCalculations = []
         }

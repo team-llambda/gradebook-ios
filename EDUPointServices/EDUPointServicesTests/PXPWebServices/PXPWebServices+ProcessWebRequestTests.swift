@@ -13,13 +13,15 @@ class PXPWebServices_ProcessWebRequestTests: XCTestCase {
     var services: PXPWebServices!
     
     override func setUp() {
-        services = PXPWebServices(userID: TestENVs.edupointUserID.value!, password: TestENVs.edupointPassword.value!, edupointBaseURL: URL(string: TestENVs.edupointBaseURL.value!)!)
+        services = PXPWebServices(userID: TestENVs.edupointUserID.value!,
+                                  password: TestENVs.edupointPassword.value!,
+                                  edupointBaseURL: URL(string: TestENVs.edupointBaseURL.value!)!)
     }
     
     func testProcessWebRequest() {
         let expectation = self.expectation(description: "pxpwebservices")
 
-        services.processWebRequest(methodToRun: .ChildList, parameters: nil, type: Child.self).then { child in
+        services.processWebRequest(methodToRun: .childList, type: Child.self).then { child in
             print(child)
         }.catch { error in
             XCTFail(error.localizedDescription)
@@ -33,7 +35,7 @@ class PXPWebServices_ProcessWebRequestTests: XCTestCase {
     func testGradebook() {
         let expectation = self.expectation(description: "pxpwebservices")
         
-        services.processWebRequest(methodToRun: .Gradebook, parameters: "<Parms><ChildIntID>0</ChildIntID></Parms>", type: Gradebook.self).then { gradebook in
+        services.processWebRequest(methodToRun: .gradebook(reportingPeriod: 1), type: Gradebook.self).then { gradebook in
             print(gradebook)
         }.catch { error in
             XCTFail(error.localizedDescription)

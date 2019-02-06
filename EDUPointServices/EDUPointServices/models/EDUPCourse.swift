@@ -44,9 +44,9 @@ public class Course: NSManagedObject, Decodable {
         
         // ======= Marks =======
         let marksContainer = try courseContainer.nestedContainer(keyedBy: AnyKey.self, forKey: .Marks)
-        let marks = try marksContainer.decode([Mark].self, forKey: AnyKey(stringValue: "Mark"))
+        let marks = try marksContainer.decode(Set<Mark>.self, forKey: AnyKey(stringValue: "Mark"))
         marks.indices.forEach { marks[$0].course = self }
         
-        self.marks = Set<Mark>(marks)
+        self.marks = marks
     }
 }

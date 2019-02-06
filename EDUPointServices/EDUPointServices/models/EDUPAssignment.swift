@@ -44,10 +44,17 @@ public class Assignment: NSManagedObject, Decodable {
     }
     
     @NSManaged public var notes: String?
-    
     @NSManaged public var isArbitrary: Bool
     
     @NSManaged public var mark: Mark?
+    
+    /// - returns: A percentage (in decimal form) of this assignment's scores. `nil` implies that this assignment hasn't been graded yet.
+    public var scorePercentage: Double? {
+        guard let actualScore = self.actualScore else { return nil }
+        guard assignedScore != 0 else { return self.assignedScore }     // Extra credit.
+        
+        return actualScore / assignedScore
+    }
     
     required public convenience init(from decoder: Decoder) throws {
         let managedObjectContext = EDUPStorageController.shared.container.viewContext
@@ -73,6 +80,7 @@ public class Assignment: NSManagedObject, Decodable {
             self.actualScore = scores.actualScore
         } else {
             self.assignedScore = 0
+            self.actualScore = nil
         }
     }
 }

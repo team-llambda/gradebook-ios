@@ -34,7 +34,7 @@ public class PXPWebServices {
         self.edupointBaseURL = edupointBaseURL
     }
     
-    public func processWebRequest<E: Decodable>(methodToRun: PXPWebServicesFunction, parameters: String?, type: E.Type) -> Promise<E> {
+    public func processWebRequest<E: Decodable>(methodToRun: PXPWebServicesFunction, type: E.Type) -> Promise<E> {
         return Promise<E>(on: .main) { (fulfill, reject) in
             let requestURL = URL(string: self.edupointBaseURL.absoluteString + "Service/PXPCommunication.asmx/ProcessWebServiceRequest")!
             let requestParameters: [String: String] = [
@@ -43,8 +43,8 @@ public class PXPWebServices {
                 "skipLoginLog": "false",
                 "parent": "false",
                 "webServiceHandleName": "PXPWebServices",
-                "methodName": methodToRun.rawValue,
-                "paramStr": parameters ?? ""
+                "methodName": methodToRun.methodName,
+                "paramStr": methodToRun.parameters
             ]
             
             AF.request(requestURL, method: .post, parameters: requestParameters)

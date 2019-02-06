@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Assignment" representedClassName="Assignment" syncable="YES">
-        <attribute name="actualScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="actualScore" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="assignedScore" attributeType="Double" defaultValueString="100" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -54,12 +54,12 @@
         <relationship name="gradebook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gradebook" inverseName="reportingPeriods" inverseEntity="Gradebook" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Assignment" positionX="98.13671875" positionY="314.6484375" width="128" height="193"/>
-        <element name="Child" positionX="-55.3359375" positionY="-150.75390625" width="128" height="105"/>
-        <element name="Course" positionX="105.25390625" positionY="-22.8046875" width="129.20703125" height="163"/>
-        <element name="Gradebook" positionX="107.92578125" positionY="-144.453125" width="129.05078125" height="88"/>
-        <element name="Mark" positionX="99.0234375" positionY="169.58203125" width="128" height="133"/>
-        <element name="ReportPeriod" positionX="339.12890625" positionY="-136.78515625" width="128" height="120"/>
-        <element name="AssignmentGradeCalc" positionX="328.640625" positionY="111.15625" width="128" height="88"/>
+        <element name="Assignment" positionX="308.12109375" positionY="-114.77734375" width="128" height="193"/>
+        <element name="AssignmentGradeCalc" positionX="309.046875" positionY="107.97265625" width="128" height="88"/>
+        <element name="Child" positionX="-8.83984375" positionY="225.171875" width="128" height="105"/>
+        <element name="Course" positionX="-33.5625" positionY="-33.55078125" width="129.20703125" height="163"/>
+        <element name="Gradebook" positionX="-210.5859375" positionY="162.078125" width="129.05078125" height="88"/>
+        <element name="Mark" positionX="139.44921875" positionY="-10.3984375" width="128" height="133"/>
+        <element name="ReportPeriod" positionX="-397.98828125" positionY="75.74609375" width="128" height="120"/>
     </elements>
 </model>
