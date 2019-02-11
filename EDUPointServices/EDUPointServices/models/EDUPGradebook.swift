@@ -10,6 +10,10 @@ import CoreData
 
 @objc(Gradebook)
 public class Gradebook: NSManagedObject, Decodable {
+    public var fetchRequest: NSFetchRequest<Gradebook> {
+        return NSFetchRequest<Gradebook>(entityName: "Gradebook")
+    }
+    
     public enum CodingKeys: String, CodingKey {
         case Courses, ReportingPeriods
     }

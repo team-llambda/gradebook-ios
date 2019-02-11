@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		825326DB949CD2A821C91EB1 /* Pods_BSD_Gradebook_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DE4731C2EED96ED7365149 /* Pods_BSD_Gradebook_iOS.framework */; };
 		A905F0D9B66CAE6C4ADF6BEF /* Pods_BSD_Gradebook_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5996259B555A2DFA3F397B5 /* Pods_BSD_Gradebook_iOSTests.framework */; };
+		CCB98AEF2211282B00BE9E4F /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB98AEE2211282B00BE9E4F /* CourseTableViewController.swift */; };
+		CCB98AF12211285B00BE9E4F /* Course.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB98AF02211285B00BE9E4F /* Course.storyboard */; };
+		CCB98AF32211F7D900BE9E4F /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB98AF22211F7D900BE9E4F /* CourseViewController.swift */; };
+		CCB98AF52211F81100BE9E4F /* CourseHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB98AF42211F81100BE9E4F /* CourseHeaderViewController.swift */; };
+		CCC9FAFA220B9A90005610BF /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9FAF9220B9A90005610BF /* OnboardingViewController.swift */; };
+		CCC9FB03220B9E12005610BF /* EDUPointServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE66AC121FFFC3600BC783E /* EDUPointServices.framework */; };
+		CCC9FB04220B9E12005610BF /* EDUPointServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCE66AC121FFFC3600BC783E /* EDUPointServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCC9FB0F220BDE51005610BF /* GradebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9FB0E220BDE50005610BF /* GradebookTableViewController.swift */; };
+		CCC9FB11220D06EB005610BF /* GradebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC9FB10220D06EB005610BF /* GradebookTableViewCell.xib */; };
+		CCC9FB13220D0880005610BF /* GradebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9FB12220D0880005610BF /* GradebookTableViewCell.swift */; };
 		CCE66A7621FFFB1C00BC783E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE66A7521FFFB1C00BC783E /* AppDelegate.swift */; };
 		CCE66A7821FFFB1C00BC783E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE66A7721FFFB1C00BC783E /* FirstViewController.swift */; };
 		CCE66A7A21FFFB1C00BC783E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE66A7921FFFB1C00BC783E /* SecondViewController.swift */; };
@@ -19,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CCC9FB05220B9E12005610BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE66ABB21FFFC3400BC783E /* EDUPointServices.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE66AA021FFFC3400BC783E;
+			remoteInfo = EDUPointServices;
+		};
 		CCE66A8921FFFB1E00BC783E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCE66A6A21FFFB1C00BC783E /* Project object */;
@@ -42,6 +59,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CCC9FB07220B9E12005610BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCC9FB04220B9E12005610BF /* EDUPointServices.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		12ADDFEE02476545D6771D7B /* Pods-BSD Gradebook iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSD Gradebook iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSD Gradebook iOSTests/Pods-BSD Gradebook iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AFC55A8F05CD02ED137E06D /* Pods-BSD Gradebook iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSD Gradebook iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSD Gradebook iOS/Pods-BSD Gradebook iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +80,14 @@
 		60E1DA15E8848691DD104537 /* Pods-BSD Gradebook iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSD Gradebook iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSD Gradebook iOSTests/Pods-BSD Gradebook iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7DE4731C2EED96ED7365149 /* Pods_BSD_Gradebook_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSD_Gradebook_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC39F3CF2203B97F00A9E8B2 /* BSD Gradebook iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BSD Gradebook iOS.entitlements"; sourceTree = "<group>"; };
+		CCB98AEE2211282B00BE9E4F /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
+		CCB98AF02211285B00BE9E4F /* Course.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Course.storyboard; sourceTree = "<group>"; };
+		CCB98AF22211F7D900BE9E4F /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		CCB98AF42211F81100BE9E4F /* CourseHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHeaderViewController.swift; sourceTree = "<group>"; };
+		CCC9FAF9220B9A90005610BF /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CCC9FB0E220BDE50005610BF /* GradebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradebookTableViewController.swift; sourceTree = "<group>"; };
+		CCC9FB10220D06EB005610BF /* GradebookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradebookTableViewCell.xib; sourceTree = "<group>"; };
+		CCC9FB12220D0880005610BF /* GradebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradebookTableViewCell.swift; sourceTree = "<group>"; };
 		CCE66A7221FFFB1C00BC783E /* BSD Gradebook iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSD Gradebook iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE66A7521FFFB1C00BC783E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE66A7721FFFB1C00BC783E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC9FB03220B9E12005610BF /* EDUPointServices.framework in Frameworks */,
 				825326DB949CD2A821C91EB1 /* Pods_BSD_Gradebook_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +144,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CCB98AEC2211281800BE9E4F /* course */ = {
+			isa = PBXGroup;
+			children = (
+				CCB98AF02211285B00BE9E4F /* Course.storyboard */,
+				CCB98AEE2211282B00BE9E4F /* CourseTableViewController.swift */,
+				CCB98AF22211F7D900BE9E4F /* CourseViewController.swift */,
+				CCB98AF42211F81100BE9E4F /* CourseHeaderViewController.swift */,
+			);
+			path = course;
+			sourceTree = "<group>";
+		};
+		CCC9FAF5220B9A7B005610BF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9FB0D220BDE42005610BF /* gradebook */,
+				CCC9FB0C220BDBE6005610BF /* child */,
+				CCC9FAF8220B9A81005610BF /* onboarding */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CCC9FAF8220B9A81005610BF /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9FAF9220B9A90005610BF /* OnboardingViewController.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		CCC9FB0C220BDBE6005610BF /* child */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = child;
+			sourceTree = "<group>";
+		};
+		CCC9FB0D220BDE42005610BF /* gradebook */ = {
+			isa = PBXGroup;
+			children = (
+				CCB98AEC2211281800BE9E4F /* course */,
+				CCC9FB0E220BDE50005610BF /* GradebookTableViewController.swift */,
+				CCC9FB10220D06EB005610BF /* GradebookTableViewCell.xib */,
+				CCC9FB12220D0880005610BF /* GradebookTableViewCell.swift */,
+			);
+			path = gradebook;
+			sourceTree = "<group>";
+		};
 		CCE66A6921FFFB1C00BC783E = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +215,7 @@
 		CCE66A7421FFFB1C00BC783E /* BSD Gradebook iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CCC9FAF5220B9A7B005610BF /* views */,
 				CC39F3CF2203B97F00A9E8B2 /* BSD Gradebook iOS.entitlements */,
 				CCE66A7521FFFB1C00BC783E /* AppDelegate.swift */,
 				CCE66A7721FFFB1C00BC783E /* FirstViewController.swift */,
@@ -169,10 +257,13 @@
 				CCE66A6E21FFFB1C00BC783E /* Sources */,
 				CCE66A6F21FFFB1C00BC783E /* Frameworks */,
 				CCE66A7021FFFB1C00BC783E /* Resources */,
+				C782A670864A2EBC9F32CC15 /* [CP] Embed Pods Frameworks */,
+				CCC9FB07220B9E12005610BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCC9FB06220B9E12005610BF /* PBXTargetDependency */,
 			);
 			name = "BSD Gradebook iOS";
 			productName = "BSD Gradebook iOS";
@@ -269,8 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC9FB11220D06EB005610BF /* GradebookTableViewCell.xib in Resources */,
 				CCE66A8221FFFB1E00BC783E /* LaunchScreen.storyboard in Resources */,
 				CCE66A7F21FFFB1E00BC783E /* Assets.xcassets in Resources */,
+				CCB98AF12211285B00BE9E4F /* Course.storyboard in Resources */,
 				CCE66A7D21FFFB1C00BC783E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +422,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C782A670864A2EBC9F32CC15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BSD Gradebook iOS/Pods-BSD Gradebook iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSD Gradebook iOS/Pods-BSD Gradebook iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -336,9 +457,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC9FB13220D0880005610BF /* GradebookTableViewCell.swift in Sources */,
 				CCE66A7A21FFFB1C00BC783E /* SecondViewController.swift in Sources */,
 				CCE66A7621FFFB1C00BC783E /* AppDelegate.swift in Sources */,
 				CCE66A7821FFFB1C00BC783E /* FirstViewController.swift in Sources */,
+				CCB98AEF2211282B00BE9E4F /* CourseTableViewController.swift in Sources */,
+				CCB98AF32211F7D900BE9E4F /* CourseViewController.swift in Sources */,
+				CCC9FAFA220B9A90005610BF /* OnboardingViewController.swift in Sources */,
+				CCC9FB0F220BDE51005610BF /* GradebookTableViewController.swift in Sources */,
+				CCB98AF52211F81100BE9E4F /* CourseHeaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +480,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CCC9FB06220B9E12005610BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EDUPointServices;
+			targetProxy = CCC9FB05220B9E12005610BF /* PBXContainerItemProxy */;
+		};
 		CCE66A8A21FFFB1E00BC783E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CCE66A7121FFFB1C00BC783E /* BSD Gradebook iOS */;
@@ -500,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56CB233484359D9AE7DF698A /* Pods-BSD Gradebook iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "BSD Gradebook iOS/BSD Gradebook iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AFC55A8F05CD02ED137E06D /* Pods-BSD Gradebook iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "BSD Gradebook iOS/BSD Gradebook iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;

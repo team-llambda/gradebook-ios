@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="7bw-8W-Grr" customClass="GradebookTableViewCell" customModule="BSD_Gradebook_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7bw-8W-Grr" id="sP2-e4-xhV">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ0-NW-4g3">
+                        <rect key="frame" x="16" y="19" width="38.5" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0b0-UE-Bys">
+                        <rect key="frame" x="62.5" y="17.5" width="218" height="36.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name xdxdxdxdxdxdxd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlN-HA-9Ne">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swL-Gk-HtP">
+                                <rect key="frame" x="0.0" y="20.5" width="218" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999.99%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBg-9d-Mrb">
+                        <rect key="frame" x="288.5" y="25.5" width="69.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vBg-9d-Mrb" firstAttribute="centerY" secondItem="sP2-e4-xhV" secondAttribute="centerY" id="86I-gW-V5r"/>
+                    <constraint firstItem="0b0-UE-Bys" firstAttribute="leading" secondItem="fJ0-NW-4g3" secondAttribute="trailing" constant="8" id="D7X-f9-rTs"/>
+                    <constraint firstItem="vBg-9d-Mrb" firstAttribute="trailing" secondItem="sP2-e4-xhV" secondAttribute="trailingMargin" id="RdF-MM-ZCU"/>
+                    <constraint firstItem="vBg-9d-Mrb" firstAttribute="leading" secondItem="0b0-UE-Bys" secondAttribute="trailing" constant="8" id="URw-Md-IYb"/>
+                    <constraint firstItem="fJ0-NW-4g3" firstAttribute="centerY" secondItem="sP2-e4-xhV" secondAttribute="centerY" id="dNp-9V-xO0"/>
+                    <constraint firstItem="fJ0-NW-4g3" firstAttribute="leading" secondItem="sP2-e4-xhV" secondAttribute="leadingMargin" id="hWh-ae-VVP"/>
+                    <constraint firstItem="0b0-UE-Bys" firstAttribute="centerY" secondItem="sP2-e4-xhV" secondAttribute="centerY" id="l9S-CV-7Pb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="classNameLabel" destination="DlN-HA-9Ne" id="57u-id-KDl"/>
+                <outlet property="periodLabel" destination="fJ0-NW-4g3" id="BlI-sf-mmG"/>
+                <outlet property="scoreLabel" destination="vBg-9d-Mrb" id="kYB-Dd-oji"/>
+                <outlet property="teacherLabel" destination="swL-Gk-HtP" id="DnJ-fo-HaR"/>
+            </connections>
+            <point key="canvasLocation" x="1100.8" y="62.518740629685162"/>
+        </tableViewCell>
+    </objects>
+</document>

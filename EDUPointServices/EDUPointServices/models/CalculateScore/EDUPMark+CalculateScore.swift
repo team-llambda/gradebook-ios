@@ -39,7 +39,14 @@ extension Mark {
         calculations.indices.forEach { calculations[$0].weight *= scaleFactor }
         
         let calculatedScore = calculations.reduce(0.0, { $0 + $1.weightedScore })
+        guard !calculatedScore.isNaN else { return nil }
         
         return calculatedScore
+    }
+    
+    public var calculatedScoreAsPercentage: String? {
+        guard let score = calculatedScore else { return nil }
+        let percentageScore = score * 100.00
+        return "\(String(format: "%.2f", percentageScore))%"
     }
 }

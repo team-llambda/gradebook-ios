@@ -67,6 +67,7 @@
 		CCC7442E2208E6D300EA93F1 /* EDUPMark+CalculateScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EDUPMark+CalculateScore.swift"; sourceTree = "<group>"; };
 		CCC744312208EC0200EA93F1 /* CalculateMarkScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateMarkScore.swift; sourceTree = "<group>"; };
 		CCC744332209037E00EA93F1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CCC9FB08220B9E87005610BF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE66AA121FFFC3400BC783E /* EDUPointServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDUPointServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE66AA421FFFC3400BC783E /* EDUPointServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDUPointServices.h; sourceTree = "<group>"; };
 		CCE66AA521FFFC3400BC783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +156,13 @@
 			path = CalculateScore;
 			sourceTree = "<group>";
 		};
+		CCC9FB14220D10E7005610BF /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = keychain;
+			sourceTree = "<group>";
+		};
 		CCE66A9721FFFC3400BC783E = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +187,7 @@
 		CCE66AA321FFFC3400BC783E /* EDUPointServices */ = {
 			isa = PBXGroup;
 			children = (
+				CCC9FB14220D10E7005610BF /* keychain */,
 				CC8ACCB22202B6EB007FD7BF /* api */,
 				CC2486732202AFE8006020D3 /* helpers */,
 				CCE66AC421FFFD0C00BC783E /* models */,
@@ -219,6 +228,7 @@
 		FA4B1FA50D7CFDF443CFA904 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCC9FB08220B9E87005610BF /* Alamofire.framework */,
 				FA11A04B83099FCAF506B205 /* Pods_EDUPointServices.framework */,
 				9B05462DAF112815EA23540B /* Pods_EDUPointServicesTests.framework */,
 			);
